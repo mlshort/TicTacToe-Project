@@ -122,7 +122,12 @@ Private Attributes</h2></td></tr>
 <p>Default constructor </p>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00044">44</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   45</span>    {</div>
+<div class="line"><span class="lineno">   46</span>        bIsGameOver = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   47</span>        currentPlayer = TttPlayerOwner.X;</div>
+<div class="line"><span class="lineno">   48</span>        gameBoard.clear();</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -143,7 +148,10 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsrc_1_1main_1_1java_1_1_tic_tac_toe_board.html">TicTacToeBoard</a> model </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00055">55</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span> gameBoard;</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5e396bdf28c002009b08128f19f15001" name="a5e396bdf28c002009b08128f19f15001"></a>
@@ -162,7 +170,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00060">60</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   61</span>    {</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">return</span> bIsGameOver;</div>
+<div class="line"><span class="lineno">   63</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaf08579aadd2a7397a0209f4253c3371" name="aaf08579aadd2a7397a0209f4253c3371"></a>
@@ -182,7 +193,10 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00069">69</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   70</span>    {</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span> gameBoard.getWinType();</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6455e223ca93aa0c2399dd764edf5f7f" name="a6455e223ca93aa0c2399dd764edf5f7f"></a>
@@ -201,7 +215,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00074">74</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   75</span>    {</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> gameBoard.getWinIndex();</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abf06d83f63ba91e451dabfadcf692a04" name="abf06d83f63ba91e451dabfadcf692a04"></a>
@@ -244,7 +261,30 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00087">87</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">if</span> (bIsGameOver)</div>
+<div class="line"><span class="lineno">   90</span>        {</div>
+<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
+<div class="line"><span class="lineno">   93</span>        <span class="comment">// update the gameBoard model data</span></div>
+<div class="line"><span class="lineno">   94</span>        gameBoard.update(row, col, playerOwner);</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordtype">int</span> iWinner = gameBoard.checkForWinner();</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">switch</span>(iWinner)</div>
+<div class="line"><span class="lineno">   98</span>        {</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">case</span> TicTacToeBoard.NO_WINNER:</div>
+<div class="line"><span class="lineno">  100</span>                switchPlayer();</div>
+<div class="line"><span class="lineno">  101</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">case</span> TicTacToeBoard.X_WINNER:</div>
+<div class="line"><span class="lineno">  103</span>            <span class="keywordflow">case</span> TicTacToeBoard.O_WINNER:</div>
+<div class="line"><span class="lineno">  104</span>            <span class="keywordflow">case</span> TicTacToeBoard.DRAW:</div>
+<div class="line"><span class="lineno">  105</span>                bIsGameOver = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  106</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  107</span>        }</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>        propertyChanges.firePropertyChange(BOARD_UPDATE_PROP_NAME, <span class="keyword">null</span>, gameBoard);</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classsrc_1_1main_1_1java_1_1_tic_tac_toe_model_abf06d83f63ba91e451dabfadcf692a04_cgraph.svg" width="612" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -269,7 +309,14 @@ Here is the call graph for this function:</div>
 <p>Returns board model to its original state and notifies potential listeners </p>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00115">115</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  116</span>    {</div>
+<div class="line"><span class="lineno">  117</span>        bIsGameOver   = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  118</span>        currentPlayer = TttPlayerOwner.X;</div>
+<div class="line"><span class="lineno">  119</span>        gameBoard.clear();</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>        propertyChanges.firePropertyChange(BOARD_UPDATE_PROP_NAME, <span class="keyword">null</span>, gameBoard);</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7ee5bb7315e58e1701ae29263e048aeb" name="a7ee5bb7315e58e1701ae29263e048aeb"></a>
@@ -306,7 +353,10 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00131">131</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><span class="lineno">  132</span>    {</div>
+<div class="line"><span class="lineno">  133</span>        updateBoard(row, col, currentPlayer);</div>
+<div class="line"><span class="lineno">  134</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classsrc_1_1main_1_1java_1_1_tic_tac_toe_model_a7ee5bb7315e58e1701ae29263e048aeb_cgraph.svg" width="940" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -330,7 +380,10 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00136">136</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  137</span>    {</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">return</span> gameBoard.isFull();</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aff4599cf3a2b36559d18af29bc26498d" name="aff4599cf3a2b36559d18af29bc26498d"></a>
@@ -358,7 +411,10 @@ Here is the call graph for this function:</div>
 <p>Switches current player between 'X' and 'O' </p>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00144">144</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  145</span>    {</div>
+<div class="line"><span class="lineno">  146</span>        currentPlayer = (currentPlayer == TttPlayerOwner.X) ? TttPlayerOwner.O : TttPlayerOwner.X;</div>
+<div class="line"><span class="lineno">  147</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6b1454b5c016128f60bbf018b0694db4" name="a6b1454b5c016128f60bbf018b0694db4"></a>
@@ -384,7 +440,10 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00157">157</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  158</span>    {</div>
+<div class="line"><span class="lineno">  159</span>        propertyChanges.addPropertyChangeListener(listener);</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aba067edeec554ecedae5fb6feb9b7444" name="aba067edeec554ecedae5fb6feb9b7444"></a>
@@ -410,7 +469,10 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_model_8java_source.html#l00169">169</a> of file <a class="el" href="_tic_tac_toe_model_8java_source.html">TicTacToeModel.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  170</span>    {</div>
+<div class="line"><span class="lineno">  171</span>        propertyChanges.removePropertyChangeListener(listener);</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>

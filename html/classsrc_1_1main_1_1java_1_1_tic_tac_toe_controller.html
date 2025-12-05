@@ -122,7 +122,17 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00041">41</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   42</span>    {</div>
+<div class="line"><span class="lineno">   43</span>        this.model = model;</div>
+<div class="line"><span class="lineno">   44</span>        this.view = view;</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (view != <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   46</span>        {</div>
+<div class="line"><span class="lineno">   47</span>            view.setController(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   48</span>            view.addMouseListener(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   49</span>        }</div>
+<div class="line"><span class="lineno">   50</span>        model.addPropertyChangeListener(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -149,7 +159,11 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00058">58</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   59</span>    {</div>
+<div class="line"><span class="lineno">   60</span>        Window win = SwingUtilities.getWindowAncestor((Component) evt.getSource());</div>
+<div class="line"><span class="lineno">   61</span>        win.dispose();</div>
+<div class="line"><span class="lineno">   62</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a558eeac8de90f23ec88578047c0652e9" name="a558eeac8de90f23ec88578047c0652e9"></a>
@@ -180,7 +194,17 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00070">70</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   71</span>    {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   73</span>        {</div>
+<div class="line"><span class="lineno">   74</span>            model.onBoardClick(row, col);</div>
+<div class="line"><span class="lineno">   75</span>        }</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">catch</span> (TicTacToeException e)</div>
+<div class="line"><span class="lineno">   77</span>        {  <span class="comment">// catch and log the exception... not really an error</span></div>
+<div class="line"><span class="lineno">   78</span>            System.err.println(<span class="stringliteral">&quot;onBoardClick Exception: &quot;</span> + e.getMessage());</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac97b6fec46780943d10ade96f3feb967" name="ac97b6fec46780943d10ade96f3feb967"></a>
@@ -200,7 +224,10 @@ Private Attributes</h2></td></tr>
 <p>Clears the underlying board model </p>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00085">85</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   86</span>    {</div>
+<div class="line"><span class="lineno">   87</span>        model.clearBoard();</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8ac652ec080999fed2cb8a57fab9d4a" name="aa8ac652ec080999fed2cb8a57fab9d4a"></a>
@@ -219,7 +246,21 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00094">94</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
+<div class="line"><span class="lineno">   96</span>        JLabel[][] board = view.getBoardLabels();</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; board.length; row++)</div>
+<div class="line"><span class="lineno">   99</span>        {</div>
+<div class="line"><span class="lineno">  100</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = 0; col &lt; board[row].length; col++)</div>
+<div class="line"><span class="lineno">  101</span>            {</div>
+<div class="line"><span class="lineno">  102</span>                <span class="keywordflow">if</span> (board[row][col] == evt.getSource())</div>
+<div class="line"><span class="lineno">  103</span>                {</div>
+<div class="line"><span class="lineno">  104</span>                    onBoardClick(row, col);</div>
+<div class="line"><span class="lineno">  105</span>                }</div>
+<div class="line"><span class="lineno">  106</span>            }</div>
+<div class="line"><span class="lineno">  107</span>        }</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classsrc_1_1main_1_1java_1_1_tic_tac_toe_controller_aa8ac652ec080999fed2cb8a57fab9d4a_cgraph.svg" width="671" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -250,7 +291,23 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00117">117</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><span class="lineno">  118</span>    {</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">if</span> (TicTacToeModel.BOARD_UPDATE_PROP_NAME.equals(evt.getPropertyName()))</div>
+<div class="line"><span class="lineno">  120</span>            {</div>
+<div class="line"><span class="lineno">  121</span>                TicTacToeBoard gameBoard = model.getGameBoard();</div>
+<div class="line"><span class="lineno">  122</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; TicTacToeBoard.BOARD_SIZE; row++)</div>
+<div class="line"><span class="lineno">  123</span>                {</div>
+<div class="line"><span class="lineno">  124</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = 0; col &lt; TicTacToeBoard.BOARD_SIZE; col++)</div>
+<div class="line"><span class="lineno">  125</span>                    {</div>
+<div class="line"><span class="lineno">  126</span>                        view.setBoardIcon(row, col, gameBoard.getPlayerOwner(row, col));</div>
+<div class="line"><span class="lineno">  127</span>                    }</div>
+<div class="line"><span class="lineno">  128</span>                }</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>                view.setWinner(gameBoard.getWinner(), gameBoard.getWinType(), gameBoard.getWinIndex());</div>
+<div class="line"><span class="lineno">  131</span>                System.out.println(<span class="stringliteral">&quot;Set Winner winner: &quot;</span> + gameBoard.getWinner() + <span class="stringliteral">&quot; winType: &quot;</span> + gameBoard.getWinType() + <span class="stringliteral">&quot; winIndex: &quot;</span> + gameBoard.getWinIndex());</div>
+<div class="line"><span class="lineno">  132</span>            }</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classsrc_1_1main_1_1java_1_1_tic_tac_toe_controller_ab85ac2b7ce61a5db0a5743640bfea228_cgraph.svg" width="648" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>

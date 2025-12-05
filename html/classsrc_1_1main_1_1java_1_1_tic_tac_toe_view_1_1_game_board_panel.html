@@ -107,7 +107,48 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00327">327</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  328</span>        {</div>
+<div class="line"><span class="lineno">  329</span>            super.paintComponent(g);</div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>            <span class="keywordflow">if</span> (winType != 0)</div>
+<div class="line"><span class="lineno">  332</span>                {</div>
+<div class="line"><span class="lineno">  333</span>                g.setColor(Color.RED); <span class="comment">// Or another desired color</span></div>
+<div class="line"><span class="lineno">  334</span>                Graphics2D g2d = (Graphics2D) g;</div>
+<div class="line"><span class="lineno">  335</span>                g2d.setStroke(<span class="keyword">new</span> BasicStroke(8)); <span class="comment">// Make the line thicker</span></div>
+<div class="line"><span class="lineno">  336</span> </div>
+<div class="line"><span class="lineno">  337</span>                <span class="keywordtype">int</span> cellSize = getWidth() / TicTacToeBoard.BOARD_SIZE; <span class="comment">//  3;</span></div>
+<div class="line"><span class="lineno">  338</span> </div>
+<div class="line"><span class="lineno">  339</span>                <span class="keywordflow">if</span> (winType == 1)</div>
+<div class="line"><span class="lineno">  340</span>                { <span class="comment">// Horizontal win</span></div>
+<div class="line"><span class="lineno">  341</span>                    g2d.drawLine(0, winIndex * cellSize + cellSize / 2, getWidth(), winIndex * cellSize + cellSize / 2);</div>
+<div class="line"><span class="lineno">  342</span>                    boardLabels[winIndex][0].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  343</span>                    boardLabels[winIndex][1].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  344</span>                    boardLabels[winIndex][2].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  345</span>                }</div>
+<div class="line"><span class="lineno">  346</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (winType == 2)</div>
+<div class="line"><span class="lineno">  347</span>                { <span class="comment">// Vertical win</span></div>
+<div class="line"><span class="lineno">  348</span>                    g2d.drawLine(winIndex * cellSize + cellSize / 2, 0, winIndex * cellSize + cellSize / 2, getHeight());</div>
+<div class="line"><span class="lineno">  349</span>                    boardLabels[0][winIndex].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  350</span>                    boardLabels[1][winIndex].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  351</span>                    boardLabels[2][winIndex].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  352</span>                }</div>
+<div class="line"><span class="lineno">  353</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (winType == 3)</div>
+<div class="line"><span class="lineno">  354</span>                { <span class="comment">// Main diagonal win (top-left to bottom-right)</span></div>
+<div class="line"><span class="lineno">  355</span>                    g2d.drawLine(0, 0, getWidth(), getHeight());</div>
+<div class="line"><span class="lineno">  356</span>                    boardLabels[0][0].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  357</span>                    boardLabels[1][1].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  358</span>                    boardLabels[2][2].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  359</span>                }</div>
+<div class="line"><span class="lineno">  360</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (winType == 4)</div>
+<div class="line"><span class="lineno">  361</span>                { <span class="comment">// Anti-diagonal win (bottom-left to top-right)</span></div>
+<div class="line"><span class="lineno">  362</span>                    g2d.drawLine(0, getHeight(), getWidth(), 0);</div>
+<div class="line"><span class="lineno">  363</span>                    boardLabels[2][0].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  364</span>                    boardLabels[1][1].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  365</span>                    boardLabels[0][2].setBackground(Color.GREEN);</div>
+<div class="line"><span class="lineno">  366</span>                }</div>
+<div class="line"><span class="lineno">  367</span>            }</div>
+<div class="line"><span class="lineno">  368</span>        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
