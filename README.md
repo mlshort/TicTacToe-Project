@@ -3,7 +3,7 @@ Project: TicTacToe
 
 Directory Structure
 -------------------
-```
+```text
 .
 └── TicTacToe-Project/
     ├── src/
@@ -19,3 +19,4 @@ Directory Structure
     │           └── TicTacToe.png
     ├── README.MD
     └── Doxyfile
+```
