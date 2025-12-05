@@ -40,7 +40,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_mouse_adapter.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="133.88,-236 62.88,-236 62.88,-184 133.88,-184 133.88,-236"/>
 <text text-anchor="start" x="66.88" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">MouseAdapter</text>
 <text text-anchor="start" x="96.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -63,7 +63,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_property_change_listener.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="264.88,-236 151.88,-236 151.88,-184 264.88,-184 264.88,-236"/>
 <text text-anchor="start" x="155.88" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">PropertyChangeListener</text>
 <text text-anchor="start" x="206.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

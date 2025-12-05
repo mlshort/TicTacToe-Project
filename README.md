@@ -3,6 +3,7 @@ Project: TicTacToe
 
 Directory Structure
 -------------------
+```
 .
 └── TicTacToe-Project/
     ├── src/

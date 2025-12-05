@@ -1,9 +1,5 @@
 <map id="src.main.java.TicTacToeBoard" name="src.main.java.TicTacToeBoard">
-<area shape="rect" id="Node000001" title=" " alt="" coords="32,275,387,515"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,27,94,96"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,95,75,168,89,209,106,250,110,258,106,261,101,252,84,211,70,169,53,97"/>
-<area shape="rect" id="Node000003" href="$enumsrc_1_1main_1_1java_1_1_ttt_player_owner.html" title=" " alt="" coords="118,5,302,117"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,117,212,258,207,258,207,117"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="325,27,350,96"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="330,97,276,252,273,260,268,258,271,250,325,95"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,189,360,579"/>
+<area shape="rect" id="Node000002" href="$enumsrc_1_1main_1_1java_1_1_ttt_player_owner.html" title=" " alt="" coords="91,5,275,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,117,186,172,180,172,180,117"/>
 </map>

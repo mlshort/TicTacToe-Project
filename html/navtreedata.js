@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "TicTacToe", "index.html", [
+    [ "<b>Assignment:</b>", "index.html#autotoc_md1", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ]
     ] ],

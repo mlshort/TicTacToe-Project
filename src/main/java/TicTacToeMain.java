@@ -5,6 +5,7 @@ import javax.swing.*;
 /**
  *  @file       TicTacToeMain.java
  *  @brief      Main source file for the "Project" assignment
+ *  @mainpage
  *  @author     Mark L. Short
  *  @date       Dec 4, 2025
  *
@@ -18,11 +19,15 @@ import javax.swing.*;
  *  @see https://canvas.txstate.edu/courses/2495146/assignments/39476428
  *  @see https://canvas.txstate.edu/courses/2495146/files/375703617?wrap=1
  *
+ *  <b>Cite:</b>
+ *       * Hovercraft Full Of Eels (Apr 2014). <I>Hello I am creating a TicTacToe game for myself to understand Java better.</I> stackoverflow .<BR>
+ *            https://stackoverflow.com/questions/23097418/hello-i-am-creating-a-tictactoe-game-for-myself-to-understand-java-better (Nov 2025)
+ *
  */
 
-// https://stackoverflow.com/questions/23097418/hello-i-am-creating-a-tictactoe-game-for-myself-to-understand-java-better
-
-
+/**
+ *  TicTacToe game application class
+ */
 public class TicTacToeMain
 {
     private static void createAndShowGui()
@@ -39,6 +44,7 @@ public class TicTacToeMain
             System.exit(-1);
         }
 
+        @SuppressWarnings("unused")
         TicTacToeController controller = new TicTacToeController(model, view);
 
         JFrame frame = new JFrame("Tic Tac Toe");

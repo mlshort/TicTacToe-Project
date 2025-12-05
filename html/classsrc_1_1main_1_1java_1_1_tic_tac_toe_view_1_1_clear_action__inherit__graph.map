@@ -1,5 +1,5 @@
 <map id="src.main.java.TicTacToeView.ClearAction" name="src.main.java.TicTacToeView.ClearAction">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,123,261,213"/>
-<area shape="rect" id="Node000002" href="$class_abstract_action.html" title=" " alt="" coords="85,5,182,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="85,5,182,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,89,136,123,131,123,131,89"/>
 </map>

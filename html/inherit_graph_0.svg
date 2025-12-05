@@ -11,8 +11,8 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="class_abstract_action.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="80.5,-39 0,-39 0,-19 80.5,-19 80.5,-39"/>
+<g id="a_Node000000"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="80.5,-39 0,-39 0,-19 80.5,-19 80.5,-39"/>
 <text text-anchor="middle" x="40.25" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractAction</text>
 </a>
 </g>

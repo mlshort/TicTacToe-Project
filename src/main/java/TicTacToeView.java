@@ -25,18 +25,14 @@ import javax.swing.*;
  *       <dt>Instructor</dt><dd>Dr. Alberto Castro-Hernandez</dd>
  *  </dl>
  *
- *  <b>Assignment:</b>
- *  ==================
- *  @see https://canvas.txstate.edu/courses/2495146/assignments/39476428
- *  @see https://canvas.txstate.edu/courses/2495146/files/375703617?wrap=1
  *
  */
 
 /**
- * Displays the data from the Model to the user and sends user inputs to the
- * Controller. It is passive and does not directly interact with the Model.
- * Instead, it receives data from the Model and sends user inputs to the
- * Controller for processing.
+ * The View component displays the data from the Model to the user and sends
+ * user inputs to the Controller. It is passive and does not directly interact
+ * with the Model. Instead, it receives data from the Model and sends user
+ * inputs to the Controller for processing.
  */
 public class TicTacToeView
 {
@@ -56,7 +52,7 @@ public class TicTacToeView
     private int winIndex;
 
     /**
-     * default constructor
+     * Default constructor
      * @throws IOException
      */
     public TicTacToeView() throws IOException
@@ -69,8 +65,8 @@ public class TicTacToeView
     }
 
     /**
-     *
-     * @param strPathToImg
+     * Initializes the iconMap data structure
+     * @param [in] strPathToImg
      * @throws IOException
      */
     private void initIconMap(String strPathToImg) throws IOException
@@ -98,7 +94,7 @@ public class TicTacToeView
     }
 
     /**
-     *
+     *  Initializes the UI components
      */
     private void initComponents()
     {
@@ -130,7 +126,7 @@ public class TicTacToeView
     }
 
     /**
-     *
+     *  Resets board label components to their original state
      */
     public void resetBoardLabels()
     {
@@ -146,8 +142,8 @@ public class TicTacToeView
     }
 
     /**
-     *
-     * @param strText
+     * Sets the text displayed in the status bar
+     * @param [in] strText        text to display on status bar
      */
     public void setStatusText(String strText)
     {
@@ -187,15 +183,23 @@ public class TicTacToeView
 
     /**
      * Sets the game square with the icon associated with the owning player
-     * @param row location of game square
-     * @param col location of game square
-     * @param playerOwner owner of the game square
+     *
+     * @param [in] row            Square row
+     * @param [in] col            Square column
+     * @param [in] playerOwner    Square owner
      */
     public void setBoardIcon(int row, int col, TttPlayerOwner playerOwner)
     {
         boardLabels[row][col].setIcon(iconMap.get(playerOwner));
     }
 
+    /**
+     * Sets the current winner data
+     *
+     * @param aWinner
+     * @param type
+     * @param index
+     */
     public void setWinner(int aWinner, int type, int index)
     {
         winner = aWinner;
@@ -223,7 +227,8 @@ public class TicTacToeView
 
     /**
      * Creates an empty ImageIcon using the size of a given icon object.
-     * @param icon
+     *
+     * @param [in] icon    provides desired image size
      * @return Icon object containing empty buffered image.
      */
     private static Icon createEmptyIcon(Icon icon)
@@ -236,7 +241,8 @@ public class TicTacToeView
 
     /**
     * Splits a BufferedImage object in half and returns two icons.
-    * @param img
+    *
+    * @param [in] img        BufferedImage containing 2 icons
     * @return Icon[] containing separated images
     */
     private static Icon[] splitImg(BufferedImage img)
@@ -289,6 +295,10 @@ public class TicTacToeView
         }
     }
 
+    /**
+     * This class implements the paintComponent method to allow
+     * custom UI display.
+     */
     private class GameBoardPanel extends JPanel
     {
         @Override

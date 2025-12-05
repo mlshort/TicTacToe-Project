@@ -9,11 +9,6 @@
  *       <dt>Instructor</dt><dd>Dr. Alberto Castro-Hernandez</dd>
  *  </dl>
  *
- *  <b>Assignment:</b>
- *  ==================
- *  @see https://canvas.txstate.edu/courses/2495146/assignments/39476428
- *  @see https://canvas.txstate.edu/courses/2495146/files/375703617?wrap=1
- *
  */
 
 package src.main.java;
@@ -39,7 +34,7 @@ public class TicTacToeModel
     private boolean bIsGameOver;
 
     /**
-     * default constructor
+     * Default constructor
      */
     public TicTacToeModel()
     {
@@ -76,6 +71,14 @@ public class TicTacToeModel
         return gameBoard.getWinIndex();
     }
 
+    /**
+     * Updates the game board model with new square owner
+     *
+     * @param [in] row            Square row
+     * @param [in] col            Square column
+     * @param [in] playerOwner    Square owner
+     * @throws TicTacToeException
+     */
     public void updateBoard(int row, int col, TttPlayerOwner playerOwner) throws TicTacToeException
     {
         if (bIsGameOver)

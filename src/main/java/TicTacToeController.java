@@ -17,18 +17,13 @@ import javax.swing.*;
  *       <dt>Instructor</dt><dd>Dr. Alberto Castro-Hernandez</dd>
  *  </dl>
  *
- *  <b>Assignment:</b>
- *  ==================
- *  @see https://canvas.txstate.edu/courses/2495146/assignments/39476428
- *  @see https://canvas.txstate.edu/courses/2495146/files/375703617?wrap=1
- *
  */
 
 /**
- * Controller acts as an intermediary between the Model and the View. It handles
- * user input and updates the Model accordingly and updates the View to reflect
- * changes in the Model. It contains application logic, such as input validation
- * and data transformation.
+ * The Controller acts as an intermediary between the Model and the View. It
+ * handles user input and updates the Model accordingly and updates the View
+ * to reflect changes in the Model. It contains application logic, such as
+ * input validation and data transformation.
  */
 public class TicTacToeController extends MouseAdapter implements PropertyChangeListener
 {
@@ -36,9 +31,10 @@ public class TicTacToeController extends MouseAdapter implements PropertyChangeL
     private TicTacToeView  view;
 
     /**
+     * Initialization constructor
      *
-     * @param model
-     * @param view
+     * @param model          Reference to the MVC model
+     * @param view           Reference to the MVC view
      */
     public TicTacToeController(TicTacToeModel model, TicTacToeView view)
     {
@@ -53,8 +49,9 @@ public class TicTacToeController extends MouseAdapter implements PropertyChangeL
     }
 
     /**
+     * Exit event handler
      *
-     * @param evt
+     * @param evt            Exit event data
      */
     public void exit(ActionEvent evt)
     {
@@ -63,9 +60,10 @@ public class TicTacToeController extends MouseAdapter implements PropertyChangeL
     }
 
     /**
+     * Mouse click event handler
      *
-     * @param row
-     * @param col
+     * @param [in] row       Square row
+     * @param [in] col       Square column
      */
     public void onBoardClick(int row, int col)
     {
@@ -80,7 +78,7 @@ public class TicTacToeController extends MouseAdapter implements PropertyChangeL
     }
 
     /**
-     *
+     * Clears the underlying board model
      */
     public void clear()
     {

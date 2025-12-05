@@ -1,7 +1,7 @@
 <map id="src.main.java.TicTacToeController" name="src.main.java.TicTacToeController">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,123,414,320"/>
-<area shape="rect" id="Node000002" href="$class_mouse_adapter.html" title=" " alt="" coords="89,5,184,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="89,5,184,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,87,172,122,167,124,153,89"/>
-<area shape="rect" id="Node000003" href="$class_property_change_listener.html" title=" " alt="" coords="208,5,358,75"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="208,5,358,75"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,89,252,124,247,122,261,87"/>
 </map>

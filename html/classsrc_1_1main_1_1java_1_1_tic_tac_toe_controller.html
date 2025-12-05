@@ -71,7 +71,7 @@ Inheritance diagram for src.main.java.TicTacToeController:</div>
 <div class="dynheader">
 Collaboration diagram for src.main.java.TicTacToeController:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classsrc_1_1main_1_1java_1_1_tic_tac_toe_controller__coll__graph.svg" width="1559" height="1811"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classsrc_1_1main_1_1java_1_1_tic_tac_toe_controller__coll__graph.svg" width="752" height="2110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -89,7 +89,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5ec71e400391d30f7747107a68398aae" id="r_a5ec71e400391d30f7747107a68398aae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsrc_1_1main_1_1java_1_1_tic_tac_toe_view.html">TicTacToeView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ec71e400391d30f7747107a68398aae">view</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Controller acts as an intermediary between the Model and the View. It handles user input and updates the Model accordingly and updates the View to reflect changes in the Model. It contains application logic, such as input validation and data transformation. </p>
+<div class="textblock"><p>The Controller acts as an intermediary between the Model and the View. It handles user input and updates the Model accordingly and updates the View to reflect changes in the Model. It contains application logic, such as input validation and data transformation. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00028">28</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a08f46df05ea88dfa330a70362d07a941" name="a08f46df05ea88dfa330a70362d07a941"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08f46df05ea88dfa330a70362d07a941">&#9670;&#160;</a></span>TicTacToeController()</h2>
@@ -109,13 +111,16 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Initialization constructor</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td></td></tr>
-    <tr><td class="paramname">view</td><td></td></tr>
+    <tr><td class="paramname">model</td><td>Reference to the MVC model </td></tr>
+    <tr><td class="paramname">view</td><td>Reference to the MVC view </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00039">39</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
 
 </div>
 </div>
@@ -134,12 +139,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Exit event handler</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">evt</td><td></td></tr>
+    <tr><td class="paramname">evt</td><td>Exit event data </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00056">56</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
 
 </div>
 </div>
@@ -161,13 +169,16 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Mouse click event handler</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">row</td><td></td></tr>
-    <tr><td class="paramname">col</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>Square row </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">col</td><td>Square column </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00068">68</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
 
 </div>
 </div>
@@ -185,6 +196,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Clears the underlying board model </p>
+
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00083">83</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
 
 </div>
 </div>
@@ -203,6 +217,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00089">89</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classsrc_1_1main_1_1java_1_1_tic_tac_toe_controller_aa8ac652ec080999fed2cb8a57fab9d4a_cgraph.svg" width="671" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="ab85ac2b7ce61a5db0a5743640bfea228" name="ab85ac2b7ce61a5db0a5743640bfea228"></a>
@@ -219,6 +240,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00106">106</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classsrc_1_1main_1_1java_1_1_tic_tac_toe_controller_ab85ac2b7ce61a5db0a5743640bfea228_cgraph.svg" width="648" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -243,6 +271,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00030">30</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
+
 </div>
 </div>
 <a id="a5ec71e400391d30f7747107a68398aae" name="a5ec71e400391d30f7747107a68398aae"></a>
@@ -265,11 +295,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_controller_8java_source.html#l00031">31</a> of file <a class="el" href="_tic_tac_toe_controller_8java_source.html">TicTacToeController.java</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/<a class="el" href="_tic_tac_toe_controller_8java.html">TicTacToeController.java</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

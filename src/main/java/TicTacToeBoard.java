@@ -23,9 +23,9 @@ package src.main.java;
  */
 enum TttPlayerOwner
 {
-    NOONE, //< unowned game square
-    X,     //< game square owned by X player
-    O      //< game square owned by Y player
+    NOONE, ///< unowned game square
+    X,     ///< game square owned by X player
+    O      ///< game square owned by Y player
 }
 
 public class TicTacToeBoard
@@ -36,7 +36,7 @@ public class TicTacToeBoard
     public static final int DRAW = 3;
 
     /**
-     * Defines the game board dimension
+     * Defines the game board dimension (i.e. 3x3)
      */
     public static final int BOARD_SIZE = 3;
 
@@ -55,6 +55,9 @@ public class TicTacToeBoard
      */
     private int winIndex;
 
+    /**
+     * default constructor
+     */
     public TicTacToeBoard()
     {
         clear();
@@ -93,10 +96,11 @@ public class TicTacToeBoard
     }
 
     /**
+     * Updates the game board with new owner
      *
-     * @param row
-     * @param col
-     * @param playerOwner
+     * @param [in] row            Square row
+     * @param [in] col            Square column
+     * @param [in] playerOwner    Square owner
      * @throws TicTacToeException
      */
     public void update(int row, int col, TttPlayerOwner playerOwner) throws TicTacToeException
@@ -115,9 +119,9 @@ public class TicTacToeBoard
     }
 
     /**
-     *
-     * @param row
-     * @param col
+     * Obtain current owner of a given square
+     * @param [in] row            Square row
+     * @param [in] col            Square column
      * @return
      */
     TttPlayerOwner getPlayerOwner(int row, int col)
