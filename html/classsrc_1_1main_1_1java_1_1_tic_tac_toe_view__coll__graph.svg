@@ -37,13 +37,13 @@
 <text text-anchor="start" x="4" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">TicTacToeView()</text>
 <text text-anchor="start" x="4" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">void resetBoardLabels()</text>
+<text text-anchor="start" x="14" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setController(TicTacToeController controller)</text>
 <text text-anchor="start" x="4" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setStatusText(String strText)</text>
+<text text-anchor="start" x="14" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">void resetBoardLabels()</text>
 <text text-anchor="start" x="4" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addMouseListener(MouseAdapter mouseAdapter)</text>
+<text text-anchor="start" x="14" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setStatusText(String strText)</text>
 <text text-anchor="start" x="4" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setController(TicTacToeController controller)</text>
+<text text-anchor="start" x="14" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addMouseListener(MouseAdapter mouseAdapter)</text>
 <text text-anchor="start" x="4" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">JComponent getMainPanel()</text>
 <text text-anchor="start" x="4" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -131,13 +131,13 @@
 <text text-anchor="start" x="317" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="327" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">TicTacToeView()</text>
 <text text-anchor="start" x="317" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="327" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">void resetBoardLabels()</text>
+<text text-anchor="start" x="327" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setController(TicTacToeController controller)</text>
 <text text-anchor="start" x="317" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="327" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setStatusText(String strText)</text>
+<text text-anchor="start" x="327" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">void resetBoardLabels()</text>
 <text text-anchor="start" x="317" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="327" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addMouseListener(MouseAdapter mouseAdapter)</text>
+<text text-anchor="start" x="327" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setStatusText(String strText)</text>
 <text text-anchor="start" x="317" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="327" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setController(TicTacToeController controller)</text>
+<text text-anchor="start" x="327" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addMouseListener(MouseAdapter mouseAdapter)</text>
 <text text-anchor="start" x="317" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="327" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">JComponent getMainPanel()</text>
 <text text-anchor="start" x="317" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

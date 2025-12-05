@@ -67,6 +67,7 @@ public class TicTacToeView
 
     /**
      * Default constructor
+     *
      * @throws IOException
      */
     public TicTacToeView() throws IOException
@@ -76,6 +77,16 @@ public class TicTacToeView
         winIndex = -1;
         initIconMap(PATH_TO_IMG);
         initComponents();
+    }
+
+    /**
+     * Registers a MVC controller with the view
+     *
+     * @param controller     Reference to the MVC controller
+     */
+    public void setController(TicTacToeController controller)
+    {
+        this.controller = controller;
     }
 
     /**
@@ -181,16 +192,6 @@ public class TicTacToeView
                 boardLabels[row][col].addMouseListener(mouseAdapter);
             }
         }
-    }
-
-    /**
-     * Registers a MVC controller for the view
-     *
-     * @param controller     reference to the MVC controller
-     */
-    public void setController(TicTacToeController controller)
-    {
-        this.controller = controller;
     }
 
     public JComponent getMainPanel()
