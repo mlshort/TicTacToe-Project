@@ -24,6 +24,8 @@ import javax.swing.*;
  * handles user input and updates the Model accordingly and updates the View
  * to reflect changes in the Model. It contains application logic, such as
  * input validation and data transformation.
+ *
+ * @sa https://java-design-patterns.com/patterns/model-view-controller/
  */
 public class TicTacToeController extends MouseAdapter implements PropertyChangeListener
 {
@@ -85,6 +87,9 @@ public class TicTacToeController extends MouseAdapter implements PropertyChangeL
         model.clearBoard();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void mousePressed(MouseEvent evt)
     {
@@ -102,6 +107,12 @@ public class TicTacToeController extends MouseAdapter implements PropertyChangeL
         }
     }
 
+    /**
+     * This method gets called when a bound property is changed.
+     *
+     * @param evt A PropertyChangeEvent object describing the event source
+     *            and the property that has changed.
+     */
     @Override
     public void propertyChange(PropertyChangeEvent evt)
     {

@@ -21,12 +21,17 @@ import javax.swing.event.SwingPropertyChangeSupport;
  * responsible for managing the application's data, processing business rules,
  * and responding to requests for information from other components, such as
  * the View and the Controller.
+ *
+ * @sa https://java-design-patterns.com/patterns/model-view-controller/
  */
 public class TicTacToeModel
 {
+    /**
+     * to make access to underlying BOARD_SIZE more convenient
+     */
     public static final int BOARD_SIZE = TicTacToeBoard.BOARD_SIZE;
-    public static final String BOARD_UPDATE_PROP_NAME = "board update";
 
+    public static final String BOARD_UPDATE_PROP_NAME = "board update";
     private final SwingPropertyChangeSupport propertyChanges = new SwingPropertyChangeSupport(this);
 
     private TicTacToeBoard gameBoard = new TicTacToeBoard();
@@ -45,7 +50,7 @@ public class TicTacToeModel
 
     /**
      *
-     * @return
+     * @return TicTacToeBoard model
      */
     public TicTacToeBoard getGameBoard()
     {
@@ -105,7 +110,7 @@ public class TicTacToeModel
     }
 
     /**
-     *
+     * Returns board model to its original state and notifies potential listeners
      */
     public void clearBoard()
     {
@@ -116,6 +121,13 @@ public class TicTacToeModel
         propertyChanges.firePropertyChange(BOARD_UPDATE_PROP_NAME, null, gameBoard);
     }
 
+    /**
+     * Mouse click event handler
+     *
+     * @param [in] row            Square row
+     * @param [in] col            Square column
+     * @throws TicTacToeException
+     */
     public void onBoardClick(int row, int col) throws TicTacToeException
     {
         updateBoard(row, col, currentPlayer);
@@ -126,16 +138,34 @@ public class TicTacToeModel
         return gameBoard.isFull();
     }
 
+    /**
+     * Switches current player between 'X' and 'O'
+     */
     private void switchPlayer()
     {
         currentPlayer = (currentPlayer == TttPlayerOwner.X) ? TttPlayerOwner.O : TttPlayerOwner.X;
     }
 
+    /**
+     * Add a PropertyChangeListener to the listener list.
+     * The listener is registered for all properties.
+     * The same listener object may be added more than once, and will be called
+     * as many times as it is added.
+     *
+     * @param listener
+     */
     public void addPropertyChangeListener(PropertyChangeListener listener)
     {
         propertyChanges.addPropertyChangeListener(listener);
     }
 
+    /**
+     * Remove a PropertyChangeListener from the listener list.
+     * This removes a PropertyChangeListener that was registered
+     * for all properties.
+     *
+     * @param listener
+     */
     public void removePropertyChangeListener(PropertyChangeListener listener)
     {
         propertyChanges.removePropertyChangeListener(listener);

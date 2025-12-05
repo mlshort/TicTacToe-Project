@@ -21,9 +21,9 @@
 <text text-anchor="start" x="5.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">JLabel statusLabel</text>
 <text text-anchor="start" x="5.5" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">Map&lt; TttPlayerOwner, Icon &gt; iconMap</text>
+<text text-anchor="start" x="14" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">JLabel[][] boardLabels</text>
 <text text-anchor="start" x="5.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">JLabel[][] boardLabels</text>
+<text text-anchor="start" x="14" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">Map&lt; TttPlayerOwner, Icon &gt; iconMap</text>
 <text text-anchor="start" x="5.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">int winner</text>
 <text text-anchor="start" x="5.5" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -115,9 +115,9 @@
 <text text-anchor="start" x="318.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="327" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">JLabel statusLabel</text>
 <text text-anchor="start" x="318.5" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="327" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">Map&lt; TttPlayerOwner, Icon &gt; iconMap</text>
+<text text-anchor="start" x="327" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">JLabel[][] boardLabels</text>
 <text text-anchor="start" x="318.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="327" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">JLabel[][] boardLabels</text>
+<text text-anchor="start" x="327" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">Map&lt; TttPlayerOwner, Icon &gt; iconMap</text>
 <text text-anchor="start" x="318.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="327" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">int winner</text>
 <text text-anchor="start" x="318.5" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

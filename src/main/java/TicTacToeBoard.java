@@ -25,7 +25,7 @@ enum TttPlayerOwner
 {
     NOONE, ///< unowned game square
     X,     ///< game square owned by X player
-    O      ///< game square owned by Y player
+    O      ///< game square owned by O player
 }
 
 public class TicTacToeBoard
@@ -51,7 +51,7 @@ public class TicTacToeBoard
      */
     private int winType;
     /**
-     * Contains the relevant Row or Col value or -1
+     * Contains the relevant Square Row, Square Column value or -1
      */
     private int winIndex;
 
@@ -120,6 +120,7 @@ public class TicTacToeBoard
 
     /**
      * Obtain current owner of a given square
+     *
      * @param [in] row            Square row
      * @param [in] col            Square column
      * @return
@@ -153,6 +154,7 @@ public class TicTacToeBoard
     }
 
     /**
+     * Checks for game winner and updates internal winner state variables
      *
      * @retval 0 - NO_WINNER
      * @retval 1 - X_WINNER

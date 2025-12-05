@@ -102,8 +102,8 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a323cd220646799e93416891b159febcb" id="r_a323cd220646799e93416891b159febcb"><td class="memItemLeft" align="right" valign="top">JPanel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a323cd220646799e93416891b159febcb">mainPanel</a> = new JPanel()</td></tr>
 <tr class="memitem:a98ae1e32871d76ad4d7757ffc6d19219" id="r_a98ae1e32871d76ad4d7757ffc6d19219"><td class="memItemLeft" align="right" valign="top">JPanel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98ae1e32871d76ad4d7757ffc6d19219">gameBoardPanel</a> = new <a class="el" href="classsrc_1_1main_1_1java_1_1_tic_tac_toe_view_1_1_game_board_panel.html">GameBoardPanel</a>()</td></tr>
 <tr class="memitem:a72b9f83ef5c4b4e6db3bfff1e34fe597" id="r_a72b9f83ef5c4b4e6db3bfff1e34fe597"><td class="memItemLeft" align="right" valign="top">JLabel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72b9f83ef5c4b4e6db3bfff1e34fe597">statusLabel</a> = new JLabel()</td></tr>
-<tr class="memitem:aab6ca6c488507994d81406701e026fd3" id="r_aab6ca6c488507994d81406701e026fd3"><td class="memItemLeft" align="right" valign="top">Map&lt; <a class="el" href="enumsrc_1_1main_1_1java_1_1_ttt_player_owner.html">TttPlayerOwner</a>, Icon &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab6ca6c488507994d81406701e026fd3">iconMap</a> = new EnumMap&lt;&gt;(TttPlayerOwner.class)</td></tr>
 <tr class="memitem:aa75e5223250c68ac2e21a21d878daa36" id="r_aa75e5223250c68ac2e21a21d878daa36"><td class="memItemLeft" align="right" valign="top">JLabel[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa75e5223250c68ac2e21a21d878daa36">boardLabels</a> = new JLabel[<a class="el" href="classsrc_1_1main_1_1java_1_1_tic_tac_toe_model.html#a02b322699f385bb75f8bc4e8236b8c65">TicTacToeModel.BOARD_SIZE</a>][<a class="el" href="classsrc_1_1main_1_1java_1_1_tic_tac_toe_model.html#a02b322699f385bb75f8bc4e8236b8c65">TicTacToeModel.BOARD_SIZE</a>]</td></tr>
+<tr class="memitem:aab6ca6c488507994d81406701e026fd3" id="r_aab6ca6c488507994d81406701e026fd3"><td class="memItemLeft" align="right" valign="top">Map&lt; <a class="el" href="enumsrc_1_1main_1_1java_1_1_ttt_player_owner.html">TttPlayerOwner</a>, Icon &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab6ca6c488507994d81406701e026fd3">iconMap</a> = new EnumMap&lt;&gt;(TttPlayerOwner.class)</td></tr>
 <tr class="memitem:a248278741062eaaaa5c9c1feef9bd2b5" id="r_a248278741062eaaaa5c9c1feef9bd2b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsrc_1_1main_1_1java_1_1_tic_tac_toe_controller.html">TicTacToeController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a248278741062eaaaa5c9c1feef9bd2b5">controller</a></td></tr>
 <tr class="memitem:a4082481d0892cadb7c5765a9f50226be" id="r_a4082481d0892cadb7c5765a9f50226be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4082481d0892cadb7c5765a9f50226be">winner</a></td></tr>
 <tr class="memitem:afe45237f784a5acdd31ce039e9a6d13e" id="r_afe45237f784a5acdd31ce039e9a6d13e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe45237f784a5acdd31ce039e9a6d13e">winType</a></td></tr>
@@ -115,9 +115,10 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a397999184581de6075c061b954e6bb52" id="r_a397999184581de6075c061b954e6bb52"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a397999184581de6075c061b954e6bb52">LINE_WIDTH</a> = 5</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The View component displays the data from the Model to the user and sends user inputs to the Controller. It is passive and does not directly interact with the Model. Instead, it receives data from the Model and sends user inputs to the Controller for processing. </p>
+<div class="textblock"><p>The View component displays the data from the Model to the user and sends user inputs to the Controller. It is passive and does not directly interact with the Model. Instead, it receives data from the Model and sends user inputs to the Controller for processing.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://java-design-patterns.com/patterns/model-view-controller/">https://java-design-patterns.com/patterns/model-view-controller/</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00037">37</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00039">39</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4881eee815d8de5c7087927ce3fce248" name="a4881eee815d8de5c7087927ce3fce248"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4881eee815d8de5c7087927ce3fce248">&#9670;&#160;</a></span>TicTacToeView()</h2>
@@ -133,14 +134,14 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>default constructor </p><dl class="exception"><dt>Exceptions</dt><dd>
+<p>Default constructor </p><dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">IOException</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00058">58</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00072">72</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -172,9 +173,10 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initializes the iconMap data structure </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Initializes the iconMap data structure</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">strPathToImg</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">strPathToImg</td><td>URI of graphic icons </td></tr>
   </table>
   </dd>
 </dl>
@@ -185,7 +187,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00072">72</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00087">87</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -218,7 +220,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Initializes the UI components </p>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00099">99</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00114">114</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -236,9 +238,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Resets board label components to their original state </p>
+<p>Resets the board label components to their original state </p>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00131">131</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00146">146</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -256,14 +258,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the text displayed in the status bar </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sets the text displayed in the status bar</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">strText</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">strText</td><td>text to display in thestatus bar </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00148">148</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00164">164</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -281,14 +284,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds the specified mouseAdapter to receive mouse events from this component. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds the specified mouseAdapter to receive mouse events from this component.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mouseAdapter</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mouseAdapter</td><td>mouse listener to register for events </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00158">158</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00175">175</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -306,8 +310,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Registers a MVC controller for the view</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td>reference to the MVC controller </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00169">169</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00191">191</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -326,7 +337,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00174">174</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00196">196</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -345,7 +356,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00179">179</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00201">201</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -372,7 +383,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the game square with the icon associated with the owning player </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sets the game square with the icon associated with the owning player</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>Square row </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">col</td><td>Square column </td></tr>
@@ -381,7 +393,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00190">190</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00213">213</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -408,8 +420,17 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets the current winner data</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aWinner</td><td>current winner (X, O, NONE) </td></tr>
+    <tr><td class="paramname">type</td><td>winner type (Horizontal, Vertical, ...) </td></tr>
+    <tr><td class="paramname">index</td><td>winner Square row or column (if relevant) </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00195">195</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00225">225</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -440,15 +461,16 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates an empty ImageIcon using the size of a given icon object. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Creates an empty ImageIcon using the size of a given icon object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">icon</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">icon</td><td>provides desired image size </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Icon object containing empty buffered image. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00225">225</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00256">256</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -474,15 +496,16 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Splits a BufferedImage object in half and returns two icons. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Splits a BufferedImage object in half and returns two icons.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>BufferedImage containing 2 icons </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Icon[] containing separated images </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00238">238</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00270">270</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -506,8 +529,9 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>location of 'X', 'O' graphic images </p>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00039">39</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00044">44</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -531,7 +555,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00040">40</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00045">45</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -555,7 +579,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00042">42</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00047">47</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -579,7 +603,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00043">43</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00048">48</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -602,32 +626,9 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Used as the app status bar </p>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00044">44</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
-
-</div>
-</div>
-<a id="aab6ca6c488507994d81406701e026fd3" name="aab6ca6c488507994d81406701e026fd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab6ca6c488507994d81406701e026fd3">&#9670;&#160;</a></span>iconMap</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Map&lt;<a class="el" href="enumsrc_1_1main_1_1java_1_1_ttt_player_owner.html">TttPlayerOwner</a>, Icon&gt; src.main.java.TicTacToeView.iconMap = new EnumMap&lt;&gt;(TttPlayerOwner.class)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00045">45</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00052">52</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -651,7 +652,32 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00046">46</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00053">53</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+
+</div>
+</div>
+<a id="aab6ca6c488507994d81406701e026fd3" name="aab6ca6c488507994d81406701e026fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6ca6c488507994d81406701e026fd3">&#9670;&#160;</a></span>iconMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;<a class="el" href="enumsrc_1_1main_1_1java_1_1_ttt_player_owner.html">TttPlayerOwner</a>, Icon&gt; src.main.java.TicTacToeView.iconMap = new EnumMap&lt;&gt;(TttPlayerOwner.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>data structure used to maintain icon with a particular owner </p>
+
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00058">58</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -674,8 +700,9 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>reference to associated MVC controller </p>
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00048">48</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00062">62</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -699,7 +726,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00050">50</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00064">64</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -723,7 +750,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00051">51</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00065">65</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>
@@ -747,7 +774,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00052">52</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tic_tac_toe_view_8java_source.html#l00066">66</a> of file <a class="el" href="_tic_tac_toe_view_8java_source.html">TicTacToeView.java</a>.</p>
 
 </div>
 </div>

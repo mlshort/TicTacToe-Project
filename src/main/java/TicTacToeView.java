@@ -33,18 +33,32 @@ import javax.swing.*;
  * user inputs to the Controller. It is passive and does not directly interact
  * with the Model. Instead, it receives data from the Model and sends user
  * inputs to the Controller for processing.
+ *
+ * @sa https://java-design-patterns.com/patterns/model-view-controller/
  */
 public class TicTacToeView
 {
+    /**
+     * location of 'X', 'O' graphic images
+     */
     private static final String PATH_TO_IMG = "https://i.sstatic.net/mwfLB.png";
     private static final int LINE_WIDTH = 5;
 
     private JPanel mainPanel = new JPanel();
     private JPanel gameBoardPanel = new GameBoardPanel();
+    /**
+     * Used as the app status bar
+     */
     private JLabel statusLabel = new JLabel();
-    private Map<TttPlayerOwner, Icon> iconMap = new EnumMap<>(TttPlayerOwner.class);
     private JLabel[][] boardLabels = new JLabel[TicTacToeModel.BOARD_SIZE][TicTacToeModel.BOARD_SIZE];
 
+    /**
+     * data structure used to maintain icon with a particular owner
+     */
+    private Map<TttPlayerOwner, Icon> iconMap = new EnumMap<>(TttPlayerOwner.class);
+    /**
+     * reference to associated MVC controller
+     */
     private TicTacToeController controller;
 
     private int winner;
@@ -66,7 +80,8 @@ public class TicTacToeView
 
     /**
      * Initializes the iconMap data structure
-     * @param [in] strPathToImg
+     *
+     * @param [in] strPathToImg   URI of graphic icons
      * @throws IOException
      */
     private void initIconMap(String strPathToImg) throws IOException
@@ -126,7 +141,7 @@ public class TicTacToeView
     }
 
     /**
-     *  Resets board label components to their original state
+     *  Resets the board label components to their original state
      */
     public void resetBoardLabels()
     {
@@ -143,7 +158,8 @@ public class TicTacToeView
 
     /**
      * Sets the text displayed in the status bar
-     * @param [in] strText        text to display on status bar
+     *
+     * @param [in] strText        text to display in thestatus bar
      */
     public void setStatusText(String strText)
     {
@@ -153,7 +169,8 @@ public class TicTacToeView
     /**
      * Adds the specified mouseAdapter to receive mouse events from
      * this component.
-     * @param mouseAdapter
+     *
+     * @param [in] mouseAdapter   mouse listener to register for events
      */
     public void addMouseListener(MouseAdapter mouseAdapter)
     {
@@ -166,6 +183,11 @@ public class TicTacToeView
         }
     }
 
+    /**
+     * Registers a MVC controller for the view
+     *
+     * @param controller     reference to the MVC controller
+     */
     public void setController(TicTacToeController controller)
     {
         this.controller = controller;
@@ -196,9 +218,9 @@ public class TicTacToeView
     /**
      * Sets the current winner data
      *
-     * @param aWinner
-     * @param type
-     * @param index
+     * @param aWinner          current winner (X, O, NONE)
+     * @param type             winner type (Horizontal, Vertical, ...)
+     * @param index            winner Square row or column (if relevant)
      */
     public void setWinner(int aWinner, int type, int index)
     {
