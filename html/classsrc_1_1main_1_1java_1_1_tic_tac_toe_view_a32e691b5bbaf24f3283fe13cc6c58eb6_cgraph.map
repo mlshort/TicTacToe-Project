@@ -1,7 +1,0 @@
-<map id="src.main.java.TicTacToeView.initIconMap" name="src.main.java.TicTacToeView.initIconMap">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,268,57"/>
-<area shape="rect" id="Node000002" href="$classsrc_1_1main_1_1java_1_1_tic_tac_toe_view.html#a5cdd973a4a8b1c491d2129fdcfe3613f" title=" " alt="" coords="316,5,610,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,31,300,29,300,34,268,36"/>
-<area shape="rect" id="Node000003" href="$classsrc_1_1main_1_1java_1_1_tic_tac_toe_view.html#a3bb0a425dfba2a376d7b5a7d0df2eae9" title=" " alt="" coords="342,56,584,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,52,327,56,327,61,268,57"/>
-</map>
